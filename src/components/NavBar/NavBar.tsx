@@ -4,7 +4,7 @@ import NavLinks from "../NavLinks/NavLinks";
 
 const NavBar = () => {
   return (
-    <nav className="bg-neutral-950 py-8 px-6">
+    <nav className="bg-neutral-950 py-8 px-6 border-b-[1px] border-gray-700">
       <div className="flex justify-between items-center lg:max-w-[1110px] lg:mx-auto">
         <img
           src={hamburgerMenu}

@@ -5,7 +5,13 @@ export default {
     fontFamily: {
       sans: ["Manrope", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "hero-mobile": "url('/image-header.jpg')",
+        "hero-tab": "url('/image-header-tab.jpg')",
+        "hero-desk": "url('/image-hero'.jpg)",
+      },
+    },
   },
   plugins: [],
 };

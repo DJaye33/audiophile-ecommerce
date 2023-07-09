@@ -1,4 +1,4 @@
-import { NavBar } from "./components";
+import { NavBar, Hero } from "./components";
 
 import "./App.css";
 
@@ -6,6 +6,7 @@ function App() {
   return (
     <>
       <NavBar />
+      <Hero />
     </>
   );
 }
