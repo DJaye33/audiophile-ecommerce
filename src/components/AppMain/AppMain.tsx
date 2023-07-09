@@ -3,7 +3,7 @@ import CategoriesItem from "../CategoriesItem/CategoriesItem";
 
 const AppMain = () => {
   return (
-    <main>
+    <main className="py-[80px] px-6 flex justify-center">
       <ItemsContainer>
         <CategoriesItem
           imageUrl="/image-category-thumbnail-headphones.png"
