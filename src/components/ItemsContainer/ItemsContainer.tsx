@@ -3,7 +3,7 @@ type ItemsContainerProps = {
 };
 
 const ItemsContainer = ({ children }: ItemsContainerProps) => {
-  return <div>{children}</div>;
+  return <div className="">{children}</div>;
 };
 
 export default ItemsContainer;

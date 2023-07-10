@@ -1,9 +1,10 @@
 import ItemsContainer from "../ItemsContainer/ItemsContainer";
 import CategoriesItem from "../CategoriesItem/CategoriesItem";
+import SpeakerFeature1 from "../SpeakerFeature1/SpeakerFeature1";
 
 const AppMain = () => {
   return (
-    <main className="py-[80px] px-6 flex justify-center">
+    <main className="py-20 px-6">
       <ItemsContainer>
         <CategoriesItem
           imageUrl="/image-category-thumbnail-headphones.png"
@@ -18,6 +19,7 @@ const AppMain = () => {
           categoryType="earphones"
         />
       </ItemsContainer>
+      <SpeakerFeature1 />
     </main>
   );
 };

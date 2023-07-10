@@ -1,13 +1,16 @@
 type SiteButtonTextProps = {
   text: string;
+  isDark?: boolean;
 };
 
-const SiteButton = ({ text }: SiteButtonTextProps) => {
-  if (text === "see product") {
+const SiteButton = ({ text, isDark }: SiteButtonTextProps) => {
+  if (text.toLowerCase() === "see product") {
     return (
       <a
         onClick={() => console.log(text)}
-        className="bg-amber-600 text-white py-4 px-9 hover:bg-amber-500 inline-block cursor-pointer"
+        className={`${
+          isDark ? "bg-black" : "bg-orange-400"
+        } text-white py-4 px-9 hover:bg-orange-300 inline-block cursor-pointer`}
       >
         {text.toUpperCase()}
       </a>
@@ -16,7 +19,9 @@ const SiteButton = ({ text }: SiteButtonTextProps) => {
     return (
       <button
         onClick={() => console.log(text)}
-        className="bg-amber-600 text-white py-4 px-9 hover:bg-amber-500"
+        className={`${
+          isDark ? "bg-black" : "bg-orange-400"
+        } text-white py-4 px-9 hover:bg-orange-300 inline-block cursor-pointer`}
       >
         {text.toUpperCase()}
       </button>

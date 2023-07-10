@@ -7,7 +7,7 @@ function App() {
     <>
       <NavBar />
       <Hero />
-      <AppMain></AppMain>
+      <AppMain />
     </>
   );
 }
